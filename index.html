@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+        background-color: indigo;
+        animation: body 4s;
+    }
+    @keyframes body {
+        0%{
+            background-color: white;
+        }
+        100%{
+            background-color: indigo;
+        }
+    }
+
+    .content {
+      width: 100%;
+      height: 30px;
+      background-image: linear-gradient(indigo, blue);
+      display: flex;
+      border-radius: 10px;
+      animation: content1 5s ;
+    }
+    @keyframes content1 {
+        0%{
+            transform: translateY(-80px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+
+    .about_me {
+      width: 25%;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      color: white;
+      text-decoration: none;
+      animation: about_me 4s;
+    }
+    .project{
+        width: 25%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    .skill{
+        width: 25%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    .contact{
+        width: 25%;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        text-decoration: none;
+    }
+    
+
+    .about_me:hover {
+        transition: 1s;
+        border-radius: 5px;
+        background-color: rgb(70,70,100);
+    }
+    .project:hover{
+        transition: 1s;
+        border-radius: 5px;
+        background-color: rgb(70,70,100);
+    }
+    .skill:hover{
+        transition: 1s;
+        border-radius: 5px;
+        background-color: rgb(70,70,100);
+    }
+    .contact:hover{
+        transition: 1s;
+        border-radius: 5px;
+        background-color: rgb(70,70,100);
+    }
+    .big_title_div{
+        width: 100%;
+        height: 200px;
+        transform: translateY(-60px);
+    }
+    #big_title{
+        text-align: center;
+        line-height: 200px ;
+        font-size: 100px;
+        color: white;
+        font-family: 'Dancing Script', cursive;
+        animation: 5s big_title1;
+    }
+    @keyframes big_title1 {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+<body>
+  <div class="content">
+    <a href="./aboutme.html" class="about_me">About Me</a>
+    <a href="./project.html" class="project">Project</a>
+    <a href="./skill.html" class="skill">Skill</a>
+    <a href="./contact.html" class="contact">Contact</a>
+  </div>
+  <div class="big_title_div">
+    <h1 id="big_title">FRONTEND DEVELOPER</h1>
+  </div>
+</body>
+</html>
