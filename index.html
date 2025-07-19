@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body{
         background-color: indigo;
@@ -111,6 +113,70 @@
             opacity: 1;
         }
     }
+    .content2{
+        width: 100%;
+        transform: translateY(-40px);
+        height: 300px;
+        position: relative;
+        animation: 5s big_title1;
+    }
+
+    .linear_gradient{
+        background-image: linear-gradient(to right, indigo,blue);
+        height: 300px;
+        width: 75%;
+        position: absolute;
+        left: 13%;
+        border-radius: 40px;
+        display: flex;
+    }
+    .image_div{
+        width: 50%;
+        height: 300px;
+        position: relative;
+    }
+     #image{
+        position: absolute;
+        left: 25%;
+        top: 35px;
+        border-radius: 50%;
+    }
+    .details_div{
+        width: 50%;
+        height: 300px;
+        margin-right: 0px;
+        align-items: center;
+        position: relative;
+    }
+   
+    #details_div_head1{
+        text-align: center;
+        color: white;
+        position:absolute;
+        left: 55px;
+        top: 40px;
+    }
+    #details_div_head2{
+        text-align:center;
+        color: white;
+        position: absolute;
+        left: 65px;
+        top: 90px;
+    }
+    #details_div_head3{
+        text-align:center;
+        color: white;
+        position: absolute;
+        left: -30px;
+        top: 130px;
+    }
+    #details_div_head4{
+        text-align:center;
+        color: white;
+        position: absolute;
+        left: 157px;
+        top: 170px;
+    }
     </style>
 </head>
 <body>
@@ -122,6 +188,19 @@
   </div>
   <div class="big_title_div">
     <h1 id="big_title">FRONTEND DEVELOPER</h1>
+  </div>
+  <div class="content2">
+    <div class="linear_gradient">
+        <div class="image_div">
+            <img src="./female_elephant.jpeg" id="image">
+        </div>
+        <div class="details_div">
+            <h1 id="details_div_head1">Hi, I'm Karishma!</h1>
+            <h2 id="details_div_head2">2nd Year ECE Student</h2>
+            <h2 id="details_div_head3">M. Kumarasamy College of Engineering</h2>
+            <h2 id="details_div_head4">Karur</h2>
+        </div>
+    </div>
   </div>
 </body>
 </html>
