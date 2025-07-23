@@ -189,9 +189,29 @@
                 width: 130px;
                 height: 180px;
                 border-radius: 20%;
+                animation: beautiful_image 5s;
+            }
+            @keyframes beautiful_image {
+                0%{
+                    transform: translateX(-100px);
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
             }
             #about_para{
                 margin-top: 20px;
+                animation: about_para 5s;
+            }
+            @keyframes about_para {
+                0%{
+                    transform: translateX(100px);
+                }
+                100%{
+                    transform: translateX(0px);
+                }
             }
         }
     </style>
