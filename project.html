@@ -1,8 +1,8 @@
-
 <html>
     <head>
         <title>project</title>
     </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body{
             background-color: indigo;
@@ -79,13 +79,348 @@
             border-radius: 5px;
             background-color: rgb(70,70,100);
         }
+        .project_div_2{
+            height: 200px;
+            width: 100%;
+            animation: 4s about_me_div;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-style: oblique;
+        }
+        @keyframes about_me_div{
+            0%{
+                transform: translateX(-500px);
+            }
+            100%{
+                transform: translateX(0px)
+            }
+        }
+        #project_title{
+            font-size: 100px;
+            color: white;
+            text-align: center;
+            text-shadow: 4px 4px 4px rgba(0,0,0);
+        }
+        .big_div{
+            height: 80%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: 5s big_div;
+        }
+        @keyframes big_div {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+        .main_project_div{
+            width: 80%;
+            border-radius: 10px;
+            background-color: blue;
+            height: 13%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*.stone_paper_scissor_image{
+            width: 30%;
+            height: 100%;
+        }*/
+        #main_project_image{
+            width: 30%;
+            height: 70%;
+            border-radius: 5px;   
+        }
+        @keyframes image_animation {
+            10%{
+                transform: rotateY(35deg);
+            }
+            20%{
+                transform: rotateY(70deg);
+            }
+            30%{
+                transform: rotateY(105deg);
+            }
+            40%{
+                transform: rotateY(140deg);
+            }
+            50%{
+                transform: rotateY(180deg);
+            }
+            60%{
+                transform: rotateY(210deg);
+            }
+            70%{
+                transform: rotateY(245deg);
+            }
+            80%{
+                transform: rotateY(270deg);
+            }
+            90%{
+                transform: rotateY(310deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        .main_project_image{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: 2s image_animation infinite;
+        }
+        .main_project_para{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .main_project_image2{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+        .main_project_para2{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #main_project_image2{
+            width: 30%;
+            height: 70%;
+            border-radius: 5px;   
+            animation: 2s image_animation infinite;
+        }
+        .main_project_div2{
+            width: 80%;
+            border-radius: 10px;
+            background-color: blue;
+            height: 13%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .big_media_div{
+            display: none;
+        }
+        @media (max-width: 440px) {
+            .about_me{
+                font-size: 10px;
+            }
+            .contact{
+                font-size: 10px;
+            }
+            .skill{
+                font-size: 10px;
+            }
+            .index{
+                font-size: 10px;
+            }
+            .big_div{
+                display: none;
+            }
+            .project_div_2{
+
+                width: 100%;
+                height: 100px;
+            }
+            #project_title{
+                font-size: 30px;
+            }
+            .big_media_div{
+                position: relative;
+                width: 100%;
+                height: 1000px;
+                flex-wrap: wrap;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: linear-gradient(rgb(20,20,255),indigo);
+                border-radius: 20px;
+                gap: 30px;
+                animation: 7s big_div;
+            }
+            .small_media_div{
+                width: 60%;
+                height: 300px;
+                border-radius: 20px;
+                background: rgb(70,70,100);
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+            .small_top_small{
+                width: 100%;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .small_bottom_small{
+                width: 100%;
+                height: 150px;
+                
+            }
+            #small_top_small{
+                width: 50%;
+                height: 75px;
+                border-radius: 20px;
+                animation: 2s image_animation infinite;
+            }
+            #small_top_small_html{
+                width: 40%;
+                height: 75px;
+                border-radius: 20px;
+                animation: 2s image_animation infinite;
+            }
+            #small_top_small_css{
+                width: 40%;
+                height: 75px;
+                border-radius: 20px;
+                animation: 2s image_animation infinite;
+            }
+            .small_top_small_web{
+                gap: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 150px;
+            }
+        }
     </style>
     <body>
+
         <div class="content">
             <a href="./index.html" class="index">Home</a>
             <a href="./aboutme.html" class="about_me">About Me</a>
             <a href="./skill.html" class="skill">Skill</a>
             <a href="./contact.html" class="contact">Contact</a>
+        </div>
+        <div class="project_div_2">
+            <h1 id="project_title">PROJECT</h1>
+        </div>
+        <div class="big_media_div">
+            <div class="small_media_div">
+                <div class="small_top_small">
+                    <img src="./c++logo.jpeg" id="small_top_small">
+                </div>
+                <div class="small_bottom_small">
+                    <p style="text-align: center;color: white;padding: 8px">I developed a fully functional Rock–Paper–Scissors game in C++ to improve my programming skills and practice implementing game logic.</p>
+                </div>
+            </div>
+            <div class="small_media_div">
+                <div class="small_top_small">
+                    <img src="./c++logo.jpeg" id="small_top_small">
+                </div>
+                <div class="small_bottom_small">
+                    <p style="text-align: center; color: white; padding: 8px">I developed a C++ currency converter for USD–INR conversions, taking user input and showing accurate results using the exchange rate.</p>
+                </div>
+            </div>
+            <div class="small_media_div">
+                <div class="small_top_small">
+                    <img src="./c++logo.jpeg" id="small_top_small">
+                </div>
+                <div class="small_bottom_small">
+                    <p style="text-align: center; color: white; padding: 8px">I developed a C++ number guessing game where the program picks a random number and gives hints until the player guesses correctly.</p>
+                </div>
+            </div>
+            <div class="small_media_div">
+                <div class="small_top_small">
+                    <img src="./c++logo.jpeg" id="small_top_small">
+                </div>
+                <div class="small_bottom_small">
+                    <p style="text-align: center; color: white; padding: 8px">I created a C++ project that enables custom shortcut keys during program execution, designed to work exclusively on Linux.</p>
+                </div>
+            </div>
+            <div class="small_media_div">
+                <div class="small_top_small">
+                    <img src="./c++logo.jpeg" id="small_top_small">
+                </div>
+                <div class="small_bottom_small">
+                    <p style="text-align: center; color: white; padding: 8px">I created a C++ program that can engage in friendly chat, with responses improving through training.</p>
+                </div>
+            </div>
+            <div class="small_media_div">
+                <div class="small_top_small_web">
+                    <img src="htmllogo.jpg" id="small_top_small_html">
+                    <img src="css1.png" id="small_top_small_css">
+                </div>
+                <div class="small_bottom_small">
+                    <p style="text-align: center; color: white; padding: 8px">I recreated the Netflix logo using HTML and CSS, and added animations for a dynamic visual effect.</p>
+                </div>
+            </div>
+        </div>
+        <div class="big_div">
+            <!--<div class="stone_paper_scissor_image">
+                <img src="./stone_paper_scissor.jpg" id="stone_paper_scissor_image">
+            </div>-->
+            <div class="main_project_div">
+                <div class="main_project_image">
+                    <img src="./c++logo.jpeg" id="main_project_image">
+                </div>
+                <div class="main_project_para">
+                    <h3 id="main_project_para">I developed a fully functional Rock–Paper–Scissors game in C++ to improve my programming skills and practice implementing game logic.</h3>
+                </div>            
+            </div>
+            <div class="main_project_div">
+                <div class="main_project_image">
+                    <img src="./c++logo.jpeg" id="main_project_image">
+                </div>
+                <div class="main_project_para">
+                    <h3 id="main_project_para">I developed a C++ number guessing game where the program picks a random number and gives hints until the player guesses correctly.</h3>
+                </div>      
+            </div>
+            <div class="main_project_div">
+                <div class="main_project_image">
+                    <img src="./c++logo.jpeg" id="main_project_image">
+                </div>
+                <div class="main_project_para">
+                    <h3 id="main_project_para">I developed a C++ currency converter for USD–INR conversions, taking user input and showing accurate results using the exchange rate.</h3>
+                </div>      
+            </div>
+            <div class="main_project_div">
+                <div class="main_project_image">
+                    <img src="./c++logo.jpeg" id="main_project_image">
+                </div>
+                <div class="main_project_para">
+                    <h3 id="main_project_para">I created a C++ project that enables custom shortcut keys during program execution, designed to work exclusively on Linux.</h3>
+                </div>      
+            </div>
+            <div class="main_project_div">
+                <div class="main_project_image">
+                    <img src="./c++logo.jpeg" id="main_project_image">
+                </div>
+                <div class="main_project_para">
+                    <h3 id="main_project_para">I created a C++ program that can engage in friendly chat, with responses improving through training.</h3>
+                </div>      
+            </div>
+            <div class="main_project_div2">
+                <div class="main_project_image2">
+                    <img src="./htmllogo.jpg" id="main_project_image2">
+                    <img src="./css1.png" id="main_project_image2">
+                </div>
+                <div class="main_project_para2">
+                    <h3 id="main_project_para2">I recreated the Netflix logo using HTML and CSS, and added animations for a dynamic visual effect.</h3>
+                </div>      
+            </div>
         </div>
     </body>
 </html>
