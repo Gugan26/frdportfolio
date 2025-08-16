@@ -1,1 +1,474 @@
 
+<html>
+    <head>
+        <title>Contact</title>
+    </head>
+    <style>
+        body{
+            background-color: indigo;
+        }
+        .content {
+            width: 100%;
+            height: 30px;
+            background-image: linear-gradient(indigo, blue);
+            display: flex;
+            border-radius: 10px;
+            animation: content1 5s ;
+        }
+        @keyframes content1 {
+            0%{
+                transform: translateY(-80px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        .about_me {
+            display: block;  
+            width: 25%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+            animation: about_me 4s;
+        }
+        .index{
+            width: 25%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .project{
+            width: 25%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+        }
+        .skill{
+            width: 25%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            text-decoration: none;
+        }
+    
+
+        .about_me:hover {
+            transition: 1s;
+            border-radius: 5px;
+            background-color: rgb(70,70,100);
+        }
+        .index:hover{
+            transition: 1s;
+            border-radius: 5px;
+            background-color: rgb(70,70,100);
+        }
+        .project:hover{
+            transition: 1s;
+            border-radius: 5px;
+            background-color: rgb(70,70,100);
+        }
+        .skill:hover{
+            transition: 1s;
+            border-radius: 5px;
+            background-color: rgb(70,70,100);
+        }
+        .contact_div_2{
+            height: 200px;
+            width: 100%;
+            animation: 4s about_me_div;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-style: oblique;
+        }
+        @keyframes about_me_div{
+            0%{
+                transform: translateX(-500px);
+            }
+            100%{
+                transform: translateX(0px)
+            }
+        }
+        #contact_title{
+            font-size: 100px;
+            color: white;
+            text-align: center;
+            text-shadow: 4px 4px 4px rgba(0,0,0);
+        }
+        .full_div{
+            position: relative;
+            width: 100%;
+            height: 60%;
+        }
+        #big_image{
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            border-radius: 50%;
+            z-index: 2;
+            animation: 6s contact_animation;
+        }
+        @keyframes contact_animation {
+            0%{
+                left: -25%;
+            }
+            50%{
+                left: 40%;
+            }
+            52%{
+                transform: rotateZ(0deg);
+            }
+            53%{
+                transform: rotateZ(360deg);
+            }
+            54%{
+                transform: rotateZ(720deg);
+            }
+            55%{
+                transform: rotateZ(1080deg);
+            }
+            56%{
+                transform: rotateZ(1440deg);
+            }
+            57%{
+                transform: rotateZ(1800deg);
+            }
+            58%{
+                transform: rotateZ(2160deg);
+            }
+            59%{
+                transform: rotateZ(2520deg);
+            }
+            60%{
+                transform: rotateZ(2880deg);
+            }
+            61%{
+                transform: rotateZ(3240deg);
+            }
+            62%{
+                transform: rotateZ(3600deg);
+            }
+            63%{
+                transform: rotateZ(3960deg);
+            }
+            64%{
+                transform: rotateZ(4320deg);
+            }
+            65%{
+                transform: rotateZ(4680deg);
+            }
+            66%{
+                transform: rotateZ(5040deg);
+            }
+            67%{
+                transform: rotateZ(5400deg);
+            }
+            68%{
+                transform: rotateZ(5760deg);
+            }
+            69%{
+                transform: rotateZ(6120deg);
+            }
+            70%{
+                transform: rotateZ(6480deg);
+            }
+            71%{
+                transform: rotateZ(6840deg);
+            }
+            72%{
+                transform: rotateZ(7200deg);
+            }
+            73%{
+                transform: rotateZ(7560deg);
+            }
+            74%{
+                transform: rotateZ(7920deg);
+            }
+            75%{
+                transform: rotateZ(8280deg);
+            }
+            76%{
+                transform: rotateZ(8640deg);
+            }
+            77%{
+                transform: rotateZ(9000deg);
+            }
+            78%{
+                transform: rotateZ(9360deg);
+            }
+            79%{
+                transform: rotateZ(9720deg);
+            }
+            /*80%{
+                transform: rotateZ(10080deg);
+            }
+            81%{
+                transform: rotateZ(10440deg);
+            }
+            82%{
+                transform: rotateZ(10800deg);
+            }
+            83%{
+                transform: rotateZ(11160deg);
+            }
+            84%{
+                transform: rotateZ(11520deg);
+            }
+            85%{
+                transform: rotateZ(11880deg);
+            }
+            86%{
+                transform: rotateZ(12240deg);
+            }
+            87%{
+                transform: rotateZ(12600deg);
+            }
+            88%{
+                transform: rotateZ(12960deg);
+            }
+            89%{
+                transform: rotateZ(13320deg);
+            }
+            90%{
+                transform: rotateZ(13680deg);
+            }
+            91%{
+                transform: rotateZ(14040deg);
+            }
+            92%{
+                transform: rotateZ(14400deg);
+            }
+            93%{
+                transform: rotateZ(14760deg);
+            }
+            94%{
+                transform: rotateZ(15120deg);
+            }
+            95%{
+                transform: rotateZ(15480deg);
+            }
+            96%{
+                transform: rotateZ(15840deg);
+            }
+            97%{
+                transform: rotateZ(16200deg);
+            }
+            98%{
+                transform: rotateZ(16560deg);
+            }
+            99%{
+                transform: rotateZ(16920deg);
+            }
+            100%{
+                transform: rotateZ(17280deg);
+            }*/
+
+            /*76%{
+                transform: rotateZ(1000deg);
+            }
+            78%{
+                transform: rotateZ(1160deg);
+            }
+            80%{
+                transform: rotateZ(1320deg);
+            }
+            82%{
+                transform: rotateZ(1640deg);
+            }
+            84%{
+                transform: rotateZ(1960deg);
+            }
+            86%{
+                transform: rotateZ(2280deg);
+            }
+            88%{
+                transform: rotateZ(2600deg);
+            }
+            90%{
+                transform: rotateZ(2920deg);
+            }
+            92%{
+                transform: rotateZ(3560deg);
+            }
+            94%{
+                transform: rotateZ(4200deg);
+            }
+            96%{
+                transform: rotateZ(4840deg);
+            }
+            98%{
+                transform: rotateZ(5480deg);
+            }
+            100%{
+                transform: rotateZ(6120deg);
+            }*/
+        }
+        #insta_image{
+            width: 100%;
+            height: 100%;
+            animation: 3s over_all infinite;
+        }
+        @keyframes over_all {
+            0%{
+                transform: scale(1.1);
+            }
+            50%{
+                transform: scale(0.0);
+            }
+            100%{
+                transform: scale(1.1);
+            }
+        }
+        .insta{
+            position: absolute;
+            border-radius: 50%;
+            width: 8%;
+            height: 22%;
+            top: 2%;
+            left: 6%;
+            animation: 5s insta;
+        }
+        @keyframes insta {
+            0%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            95%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            100%{
+                top: 2%;
+                left: 6%;
+            }
+        }
+        .github{
+            position: absolute;
+            border-radius: 50%;
+            width: 6%;
+            height: 18%;
+            top: 78%;
+            left: 8%;
+            animation: 5s github;
+        }
+        @keyframes github {
+            0%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            95%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            100%{
+                top: 78%;
+                left: 6%;
+            }
+        }
+        #github_image{
+            width: 100%;
+            height: 100%;
+            animation: 3s over_all infinite;
+        }
+        .linkedin{
+            position: absolute;
+            border-radius: 50%;
+            width: 6%;
+            height: 18%;
+            top: 1%;
+            left: 86%;
+            animation: 5s linkedin;
+        }
+        @keyframes linkedin {
+            0%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            95%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            100%{
+                top: 1%;
+                left: 86%;
+            }
+        }
+        #linkedin_image{
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
+            animation: 3s over_all infinite;
+        }
+        .x{
+            position: absolute;
+            border-radius: 50%;
+            width: 8%;
+            height: 18%;
+            top: 78%;
+            left: 85%;
+            animation: 5s x_animation;
+        }
+        @keyframes x_animation {
+            0%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            95%{
+                top: 39%;
+                left: 46%;
+                opacity: 0;
+            }
+            100%{
+                top: 78%;
+                left: 85%;
+            }
+        }
+        #x_image{
+            width: 100%;
+            height: 100%;
+            animation: 3s over_all infinite;
+        }
+    </style>
+    <body>
+        <div class="content">
+            <a href="./index.html" class="index">Home</a>
+            <a href="./aboutme.html" class="about_me">About Me</a>
+            <a href="./project.html" class="project">Project</a>
+            <a href="./skill.html" class="skill">Skill</a>
+        </div>
+        <div class="contact_div_2">
+            <h1 id="contact_title">CONTACT</h1>
+        </div>
+        <div class="full_div">
+            <div class="big_image">
+                <img src="./contact.webp" style="height: 50%;width: 20%" id="big_image">
+            </div>
+                <div class="insta">
+                    <a href=" "><img src="./nobginsta.png" id="insta_image"> </a>                   
+                </div>
+                <div class="github">
+                    <a href=" "><img src="./nobggithub.png" id="github_image"></a>
+                </div>
+                <div class="linkedin">
+                    <a href=" "><img src="./nobglinkedin.png" id="linkedin_image"></a>
+                </div>
+                <div class="x">
+                    <a href=" "><img src="./nobgx.png" id="x_image"></a>
+                </div>
+        </div>
+    </body>
+</html>
